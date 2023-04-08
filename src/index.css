@@ -25,9 +25,15 @@ h1{
 
 nav{
   display: flex;
-  width: 80vw;
-  justify-content: flex-start;
+  
+  justify-content: space-between;
   padding: 1rem;
+  align-items: center;
+}
+
+nav div{
+  display: flex;
+  justify-content: space-between;
 }
 
 a{
@@ -42,20 +48,33 @@ a:hover{
 
 footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   text-align: center;
   padding: 2rem;
   position: relative;
   bottom: 0;
-  width: 90%;
-  height: 40px;
-  margin-top: 2rem;
+ 
+
+  margin-top: 3rem;
+  background-color: gainsboro;
 }
 
-footer > img{
+.left-footer img{
   width: 200px;
-  margin: 0;
 }
+
+.div-icon{
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  text-align: center;
+}
+
+.div-icon img{
+  width: 40px;
+  height: 40px;
+}
+
 footer > p{
   margin: 0;
   padding-top: 0.7rem;
@@ -80,6 +99,18 @@ form{
   border: 0.5px solid rgb(136, 136, 136);
 }
 
+.card img{
+  width: 200px;
+  height: auto;
+}
+
+.card-link{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
 .card:hover{
   border: 0.5px solid rgb(206, 217, 142);
 }
@@ -94,6 +125,12 @@ form{
   margin: 0 auto;
 }
 
+.detail-grid{
+  display: flex;
+  flex-direction:  column;
+  text-align: center;
+}
+
 table {
  border-collapse: collapse;
     border-spacing: 0;
@@ -102,6 +139,7 @@ table {
     border: 1px solid #ccc;
 
 }
+
 
 td, th {
   border: 1px solid #dddddd;
@@ -120,3 +158,4 @@ tr:nth-child(even) {
 .dark > a {
   color: white;
 }
+
